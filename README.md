@@ -173,3 +173,4 @@ The report can be regenerated with `python scripts/build-report.py` in an enviro
 POST and PUT require a JSON object containing both `name` and `email`. Emails are normalised to lowercase, with uniqueness enforced in PostgreSQL. Parameterised SQL keeps user values separate from SQL syntax. All API replicas share the same database.
 
 This is a local assignment API with no authentication or graphical frontend. Do not expose it as a public user-management system.
+# Kubernetes-ITM403
