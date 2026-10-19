@@ -1,0 +1,1936 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:21Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "api-7649778f68-b8trb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9107",
+                "uid": "d797a875-bbb6-4fb1-90b4-2ebe60f9b384"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:21Z",
+            "message": "Successfully assigned usermgmt-02230135/api-7649778f68-b8trb to minikube",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:21Z",
+                "name": "api-7649778f68-b8trb.18dcecc4bbc44cb8",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9113",
+                "uid": "bd0744ba-3350-4055-bb42-3886c2f720bd"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.initContainers{init-db}",
+                "kind": "Pod",
+                "name": "api-7649778f68-b8trb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9108",
+                "uid": "d797a875-bbb6-4fb1-90b4-2ebe60f9b384"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:23Z",
+            "message": "Container image \"usermgmt-api:1.0\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:23Z",
+                "name": "api-7649778f68-b8trb.18dcecc5389ce37a",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9136",
+                "uid": "7685e888-309d-4697-a6cd-31ef598e593d"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.initContainers{init-db}",
+                "kind": "Pod",
+                "name": "api-7649778f68-b8trb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9108",
+                "uid": "d797a875-bbb6-4fb1-90b4-2ebe60f9b384"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:23Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:23Z",
+                "name": "api-7649778f68-b8trb.18dcecc54a4d5e78",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9139",
+                "uid": "3de6a694-8d45-4ada-840c-9b55996bd1d8"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:24Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.initContainers{init-db}",
+                "kind": "Pod",
+                "name": "api-7649778f68-b8trb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9108",
+                "uid": "d797a875-bbb6-4fb1-90b4-2ebe60f9b384"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:24Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:24Z",
+                "name": "api-7649778f68-b8trb.18dcecc580d2b0e4",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9150",
+                "uid": "4c4f7199-8394-4072-a6ec-19d3e2ab0ee8"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:30Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-b8trb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9108",
+                "uid": "d797a875-bbb6-4fb1-90b4-2ebe60f9b384"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:30Z",
+            "message": "Container image \"usermgmt-api:1.0\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:31Z",
+                "name": "api-7649778f68-b8trb.18dcecc6ed600473",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9180",
+                "uid": "df4a0594-8605-4046-a4b0-ee21a355d885"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-b8trb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9108",
+                "uid": "d797a875-bbb6-4fb1-90b4-2ebe60f9b384"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:31Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:31Z",
+                "name": "api-7649778f68-b8trb.18dcecc70980d05e",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9184",
+                "uid": "1c3b98ac-6429-4501-a610-2676cce040f8"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:32Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-b8trb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9108",
+                "uid": "d797a875-bbb6-4fb1-90b4-2ebe60f9b384"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:32Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:32Z",
+                "name": "api-7649778f68-b8trb.18dcecc738d3340d",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9190",
+                "uid": "6e44d938-10d1-488a-8a25-5c350477c1b8"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:32Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-b8trb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9108",
+                "uid": "d797a875-bbb6-4fb1-90b4-2ebe60f9b384"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:33Z",
+            "message": "Readiness probe failed: Get \"http://10.244.0.14:8000/ready\": dial tcp 10.244.0.14:8000: connect: connection refused",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:32Z",
+                "name": "api-7649778f68-b8trb.18dcecc739d4b690",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9196",
+                "uid": "e85ea6fe-7868-488a-845c-b5f5b3b592f0"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:42Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-b8trb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9108",
+                "uid": "d797a875-bbb6-4fb1-90b4-2ebe60f9b384"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:42Z",
+            "message": "Readiness probe failed: Get \"http://10.244.0.14:8000/ready\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:42Z",
+                "name": "api-7649778f68-b8trb.18dcecc998ccb617",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9219",
+                "uid": "ade940ba-a469-4157-bffe-0969dc9ceb34"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:32:44Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-b8trb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9108",
+                "uid": "d797a875-bbb6-4fb1-90b4-2ebe60f9b384"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:32:44Z",
+            "message": "Liveness probe failed: Get \"http://10.244.0.14:8000/healthz\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:32:44Z",
+                "name": "api-7649778f68-b8trb.18dcecd7fa29a261",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9352",
+                "uid": "d2fb2e3f-c446-4f8a-920f-a9b5165dea92"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:21Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "api-7649778f68-ffxqt",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9118",
+                "uid": "09bcd380-a51d-4d30-8690-c5f277ac8882"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:21Z",
+            "message": "Successfully assigned usermgmt-02230135/api-7649778f68-ffxqt to minikube",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:21Z",
+                "name": "api-7649778f68-ffxqt.18dcecc4c74ed29c",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9126",
+                "uid": "92997b0b-9276-46f2-92a5-92f48a8c227f"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:22Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.initContainers{init-db}",
+                "kind": "Pod",
+                "name": "api-7649778f68-ffxqt",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9121",
+                "uid": "09bcd380-a51d-4d30-8690-c5f277ac8882"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:22Z",
+            "message": "Container image \"usermgmt-api:1.0\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:22Z",
+                "name": "api-7649778f68-ffxqt.18dcecc50f95302b",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9131",
+                "uid": "3db67e76-3e87-40a6-874d-16ab0bb2fdd4"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.initContainers{init-db}",
+                "kind": "Pod",
+                "name": "api-7649778f68-ffxqt",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9121",
+                "uid": "09bcd380-a51d-4d30-8690-c5f277ac8882"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:23Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:23Z",
+                "name": "api-7649778f68-ffxqt.18dcecc521542dcc",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9134",
+                "uid": "f9df5662-f6de-4ba6-a6c3-7909188b69ac"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.initContainers{init-db}",
+                "kind": "Pod",
+                "name": "api-7649778f68-ffxqt",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9121",
+                "uid": "09bcd380-a51d-4d30-8690-c5f277ac8882"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:23Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:23Z",
+                "name": "api-7649778f68-ffxqt.18dcecc54a4cfc1c",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9138",
+                "uid": "970e59e3-6225-4f1b-ab1e-5c494053531c"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:29Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-ffxqt",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9121",
+                "uid": "09bcd380-a51d-4d30-8690-c5f277ac8882"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:29Z",
+            "message": "Container image \"usermgmt-api:1.0\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:29Z",
+                "name": "api-7649778f68-ffxqt.18dcecc6b122ff16",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9169",
+                "uid": "042accd8-cca4-463f-bc92-60e5d4453447"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:29Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-ffxqt",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9121",
+                "uid": "09bcd380-a51d-4d30-8690-c5f277ac8882"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:29Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:29Z",
+                "name": "api-7649778f68-ffxqt.18dcecc6b3a4fd6b",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9171",
+                "uid": "f8883a59-bffb-4faf-9d8a-ac48e207c9b2"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:30Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-ffxqt",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9121",
+                "uid": "09bcd380-a51d-4d30-8690-c5f277ac8882"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:30Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:30Z",
+                "name": "api-7649778f68-ffxqt.18dcecc6bbae2b9b",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9172",
+                "uid": "32cd0ad6-742d-46f4-b1b7-fdc20ad98dce"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:30Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-ffxqt",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9121",
+                "uid": "09bcd380-a51d-4d30-8690-c5f277ac8882"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:30Z",
+            "message": "Readiness probe failed: Get \"http://10.244.0.13:8000/ready\": dial tcp 10.244.0.13:8000: connect: connection refused",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:30Z",
+                "name": "api-7649778f68-ffxqt.18dcecc6bc78a2a1",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9178",
+                "uid": "26d01677-f871-4232-95fb-586d774cb642"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:21Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "api-7649778f68-lx6b8",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9112",
+                "uid": "4a498c0b-6226-4d1f-b72b-80e860d7aaff"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:21Z",
+            "message": "Successfully assigned usermgmt-02230135/api-7649778f68-lx6b8 to minikube",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:21Z",
+                "name": "api-7649778f68-lx6b8.18dcecc4c18d07e3",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9119",
+                "uid": "082900d1-0d87-4ef4-8c13-771034fad375"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:24Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.initContainers{init-db}",
+                "kind": "Pod",
+                "name": "api-7649778f68-lx6b8",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9116",
+                "uid": "4a498c0b-6226-4d1f-b72b-80e860d7aaff"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:24Z",
+            "message": "Container image \"usermgmt-api:1.0\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:24Z",
+                "name": "api-7649778f68-lx6b8.18dcecc55d101120",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9145",
+                "uid": "230f41fd-915e-4bc7-b9db-e263a6720d5a"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:24Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.initContainers{init-db}",
+                "kind": "Pod",
+                "name": "api-7649778f68-lx6b8",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9116",
+                "uid": "4a498c0b-6226-4d1f-b72b-80e860d7aaff"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:24Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:24Z",
+                "name": "api-7649778f68-lx6b8.18dcecc57442a3b4",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9148",
+                "uid": "24e73290-094f-4883-bae1-44b30530b94f"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:25Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.initContainers{init-db}",
+                "kind": "Pod",
+                "name": "api-7649778f68-lx6b8",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9116",
+                "uid": "4a498c0b-6226-4d1f-b72b-80e860d7aaff"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:25Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:25Z",
+                "name": "api-7649778f68-lx6b8.18dcecc5a3df3764",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9159",
+                "uid": "47f5fe0a-2846-45ee-b129-2f002a95f537"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:30Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-lx6b8",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9116",
+                "uid": "4a498c0b-6226-4d1f-b72b-80e860d7aaff"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:33:14Z",
+            "message": "Container image \"usermgmt-api:1.0\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:30Z",
+                "name": "api-7649778f68-lx6b8.18dcecc6ed47f3ef",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9408",
+                "uid": "1f602b28-8870-4e38-8599-8ec8b754086f"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-lx6b8",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9116",
+                "uid": "4a498c0b-6226-4d1f-b72b-80e860d7aaff"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:33:14Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:31Z",
+                "name": "api-7649778f68-lx6b8.18dcecc709caaf81",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9409",
+                "uid": "e10102b0-d038-4d1e-a12d-4526f07aba28"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-lx6b8",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9116",
+                "uid": "4a498c0b-6226-4d1f-b72b-80e860d7aaff"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:33:14Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:31Z",
+                "name": "api-7649778f68-lx6b8.18dcecc72d5959eb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9410",
+                "uid": "3fe1861a-a574-4f86-a807-7b491be0edc9"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 4,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:32Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-lx6b8",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9116",
+                "uid": "4a498c0b-6226-4d1f-b72b-80e860d7aaff"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:33:15Z",
+            "message": "Readiness probe failed: Get \"http://10.244.0.16:8000/ready\": dial tcp 10.244.0.16:8000: connect: connection refused",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:32Z",
+                "name": "api-7649778f68-lx6b8.18dcecc739569b73",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9414",
+                "uid": "0e7f6320-4e2b-43cd-a9b1-2cc81f992a5e"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 4,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:32:04Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-lx6b8",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9116",
+                "uid": "4a498c0b-6226-4d1f-b72b-80e860d7aaff"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:32:44Z",
+            "message": "Liveness probe failed: Get \"http://10.244.0.16:8000/healthz\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:32:04Z",
+                "name": "api-7649778f68-lx6b8.18dcecceafd27a5d",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9353",
+                "uid": "0dccc2c6-c3b7-452f-a678-f1ef440f1f66"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 8,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:32:37Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-lx6b8",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9116",
+                "uid": "4a498c0b-6226-4d1f-b72b-80e860d7aaff"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:33:10Z",
+            "message": "Readiness probe failed: Get \"http://10.244.0.16:8000/ready\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:32:37Z",
+                "name": "api-7649778f68-lx6b8.18dcecd65ea7540b",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9402",
+                "uid": "5094fd70-93fd-4dff-b9f1-a6a18386ae84"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:32:44Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-lx6b8",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9116",
+                "uid": "4a498c0b-6226-4d1f-b72b-80e860d7aaff"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:32:44Z",
+            "message": "Container api failed liveness probe, will be restarted",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:32:44Z",
+                "name": "api-7649778f68-lx6b8.18dcecd7ffeda5c2",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9354",
+                "uid": "f3f79bcc-0058-4ac7-bd96-efaea0d19466"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:33:14Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-lx6b8",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9116",
+                "uid": "4a498c0b-6226-4d1f-b72b-80e860d7aaff"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:33:14Z",
+            "message": "Readiness probe failed: Get \"http://10.244.0.16:8000/ready\": read tcp 10.244.0.1:39008-\u003e10.244.0.16:8000: read: connection reset by peer",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:33:14Z",
+                "name": "api-7649778f68-lx6b8.18dcecdefea7c8bf",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9407",
+                "uid": "dd5791ef-bc3a-4569-938c-43d7bcbb3f91"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 3,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T16:24:57Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-qkwrq",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "5006",
+                "uid": "1de84a9a-4b0a-4fd7-99a7-2038e6f9e311"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:53Z",
+            "message": "Container image \"usermgmt-api:1.0\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:30:47Z",
+                "name": "api-7649778f68-qkwrq.18dce925154f425d",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9258",
+                "uid": "9335138b-ec5e-41fe-ad0c-6a3630d4f067"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 3,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T16:24:57Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-qkwrq",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "5006",
+                "uid": "1de84a9a-4b0a-4fd7-99a7-2038e6f9e311"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:53Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:30:47Z",
+                "name": "api-7649778f68-qkwrq.18dce92518815378",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9259",
+                "uid": "5d22fc4a-018a-46ee-989c-183bfdf1f763"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 3,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T16:24:57Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-qkwrq",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "5006",
+                "uid": "1de84a9a-4b0a-4fd7-99a7-2038e6f9e311"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:53Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:30:48Z",
+                "name": "api-7649778f68-qkwrq.18dce9251ddbb32d",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9260",
+                "uid": "9d00e6f3-2a22-4981-910a-bcc2f10d6636"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 8,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T16:24:57Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-qkwrq",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "5006",
+                "uid": "1de84a9a-4b0a-4fd7-99a7-2038e6f9e311"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:54Z",
+            "message": "Readiness probe failed: Get \"http://10.244.0.12:8000/ready\": dial tcp 10.244.0.12:8000: connect: connection refused",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:30:48Z",
+                "name": "api-7649778f68-qkwrq.18dce92520e7f6d9",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9264",
+                "uid": "eb9340de-02ef-48d7-9dca-d841307fa717"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 10,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:30:24Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-qkwrq",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "5006",
+                "uid": "1de84a9a-4b0a-4fd7-99a7-2038e6f9e311"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:33:14Z",
+            "message": "Liveness probe failed: Get \"http://10.244.0.12:8000/healthz\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:30:24Z",
+                "name": "api-7649778f68-qkwrq.18dcecb78015aa18",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9413",
+                "uid": "8d8b7fc6-436c-4448-ae1f-e9ce87ce6b68"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:30:44Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-qkwrq",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "5006",
+                "uid": "1de84a9a-4b0a-4fd7-99a7-2038e6f9e311"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:44Z",
+            "message": "Container api failed liveness probe, will be restarted",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:30:44Z",
+                "name": "api-7649778f68-qkwrq.18dcecbc282260d1",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9240",
+                "uid": "339318c6-0c38-4bb4-b09c-3cd227d0e378"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 4,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:37Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-qkwrq",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "5006",
+                "uid": "1de84a9a-4b0a-4fd7-99a7-2038e6f9e311"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:33:08Z",
+            "message": "Readiness probe failed: Get \"http://10.244.0.12:8000/ready\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:37Z",
+                "name": "api-7649778f68-qkwrq.18dcecc86ec405df",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9390",
+                "uid": "37074a47-11e7-4a55-870a-1be71a934f44"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:21Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "api-7649778f68-tnzlb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9110",
+                "uid": "4f445272-fe12-40ad-8cb5-2f5a796d8b68"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:21Z",
+            "message": "Successfully assigned usermgmt-02230135/api-7649778f68-tnzlb to minikube",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:21Z",
+                "name": "api-7649778f68-tnzlb.18dcecc4c18d68f2",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9123",
+                "uid": "f12d3ef6-cf78-42be-a416-6fb7476484ab"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.initContainers{init-db}",
+                "kind": "Pod",
+                "name": "api-7649778f68-tnzlb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9115",
+                "uid": "4f445272-fe12-40ad-8cb5-2f5a796d8b68"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:23Z",
+            "message": "Container image \"usermgmt-api:1.0\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:24Z",
+                "name": "api-7649778f68-tnzlb.18dcecc550f8f02e",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9141",
+                "uid": "36d14221-84ae-4161-8302-9a91084b4407"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:24Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.initContainers{init-db}",
+                "kind": "Pod",
+                "name": "api-7649778f68-tnzlb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9115",
+                "uid": "4f445272-fe12-40ad-8cb5-2f5a796d8b68"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:24Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:24Z",
+                "name": "api-7649778f68-tnzlb.18dcecc56326a22d",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9147",
+                "uid": "b16dc6b4-dfbd-4e07-a81b-6e3a2c232851"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:25Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.initContainers{init-db}",
+                "kind": "Pod",
+                "name": "api-7649778f68-tnzlb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9115",
+                "uid": "4f445272-fe12-40ad-8cb5-2f5a796d8b68"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:25Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:25Z",
+                "name": "api-7649778f68-tnzlb.18dcecc592b04664",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9154",
+                "uid": "2e7ebb2a-0bf3-436a-8b2f-c5a24d6fffd3"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:30Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-tnzlb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9115",
+                "uid": "4f445272-fe12-40ad-8cb5-2f5a796d8b68"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:30Z",
+            "message": "Container image \"usermgmt-api:1.0\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:30Z",
+                "name": "api-7649778f68-tnzlb.18dcecc6ed1c885c",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9175",
+                "uid": "8aa163d0-9549-4171-b65e-fc81c24cb369"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-tnzlb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9115",
+                "uid": "4f445272-fe12-40ad-8cb5-2f5a796d8b68"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:31Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:31Z",
+                "name": "api-7649778f68-tnzlb.18dcecc6fe7d4768",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9182",
+                "uid": "28ce2bdc-de49-4020-825a-a7ce1656c6a9"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-tnzlb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9115",
+                "uid": "4f445272-fe12-40ad-8cb5-2f5a796d8b68"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:31Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:31Z",
+                "name": "api-7649778f68-tnzlb.18dcecc727234729",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9186",
+                "uid": "c4d71eba-0bb2-47d2-bc78-8b7932492902"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-tnzlb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9115",
+                "uid": "4f445272-fe12-40ad-8cb5-2f5a796d8b68"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:33Z",
+            "message": "Readiness probe failed: Get \"http://10.244.0.15:8000/ready\": dial tcp 10.244.0.15:8000: connect: connection refused",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:31Z",
+                "name": "api-7649778f68-tnzlb.18dcecc72d293ae4",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9195",
+                "uid": "86961751-8051-4a02-a19b-1b3b32dbfdad"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:42Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-tnzlb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9115",
+                "uid": "4f445272-fe12-40ad-8cb5-2f5a796d8b68"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:42Z",
+            "message": "Readiness probe failed: Get \"http://10.244.0.15:8000/ready\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:42Z",
+                "name": "api-7649778f68-tnzlb.18dcecc998f6e96d",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9222",
+                "uid": "ef8096d5-96b5-4397-ab8a-ee70311355ff"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:32:54Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-tnzlb",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9115",
+                "uid": "4f445272-fe12-40ad-8cb5-2f5a796d8b68"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:33:14Z",
+            "message": "Liveness probe failed: Get \"http://10.244.0.15:8000/healthz\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:32:54Z",
+                "name": "api-7649778f68-tnzlb.18dcecda53740cc9",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9406",
+                "uid": "8427c666-d7ac-471d-a4d1-3b7aae771a5c"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 3,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T16:24:57Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-zl899",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "5003",
+                "uid": "0db0a3fd-77a6-4892-b331-73e8fcab859d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:32:28Z",
+            "message": "Container image \"usermgmt-api:1.0\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:30:47Z",
+                "name": "api-7649778f68-zl899.18dce92515734da6",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9312",
+                "uid": "9c43ee15-f4b0-4ac0-971b-869c096871fe"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 3,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T16:24:57Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-zl899",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "5003",
+                "uid": "0db0a3fd-77a6-4892-b331-73e8fcab859d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:32:28Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:30:47Z",
+                "name": "api-7649778f68-zl899.18dce925191d52f0",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9313",
+                "uid": "32301bda-55aa-4d36-b1dd-7b726809847f"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 3,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T16:24:57Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-zl899",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "5003",
+                "uid": "0db0a3fd-77a6-4892-b331-73e8fcab859d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:32:28Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:30:47Z",
+                "name": "api-7649778f68-zl899.18dce9251dc5c852",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9314",
+                "uid": "47b17a08-7392-4493-83b3-6f754df7ebf6"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 7,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T16:24:57Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-zl899",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "5003",
+                "uid": "0db0a3fd-77a6-4892-b331-73e8fcab859d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:32:29Z",
+            "message": "Readiness probe failed: Get \"http://10.244.0.11:8000/ready\": dial tcp 10.244.0.11:8000: connect: connection refused",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:30:47Z",
+                "name": "api-7649778f68-zl899.18dce9252085d954",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9321",
+                "uid": "67326151-d861-4061-ac0b-9b376bdf0fa7"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 6,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:30:24Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-zl899",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "5003",
+                "uid": "0db0a3fd-77a6-4892-b331-73e8fcab859d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:32:24Z",
+            "message": "Liveness probe failed: Get \"http://10.244.0.11:8000/healthz\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:30:24Z",
+                "name": "api-7649778f68-zl899.18dcecb77f2856c4",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9304",
+                "uid": "5d83fc7a-7843-4e67-af16-95d0017b83a3"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:30:44Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{api}",
+                "kind": "Pod",
+                "name": "api-7649778f68-zl899",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "5003",
+                "uid": "0db0a3fd-77a6-4892-b331-73e8fcab859d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:32:24Z",
+            "message": "Container api failed liveness probe, will be restarted",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:30:44Z",
+                "name": "api-7649778f68-zl899.18dcecbc272ecf19",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9305",
+                "uid": "a230cc54-4645-4b2f-a324-22e867f05844"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "minikube",
+            "source": {
+                "component": "kubelet",
+                "host": "minikube"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:21Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "api-7649778f68",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9102",
+                "uid": "a005e711-de78-42b8-9529-fed175f50332"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:21Z",
+            "message": "Created pod: api-7649778f68-b8trb",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:21Z",
+                "name": "api-7649778f68.18dcecc4bb332f95",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9109",
+                "uid": "f53a64e5-175c-4369-8d79-1260b29bfa44"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:21Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "api-7649778f68",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9102",
+                "uid": "a005e711-de78-42b8-9529-fed175f50332"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:21Z",
+            "message": "Created pod: api-7649778f68-tnzlb",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:21Z",
+                "name": "api-7649778f68.18dcecc4bc01258d",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9114",
+                "uid": "6671fe65-f934-4767-8ea1-ff797564a58e"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:21Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "api-7649778f68",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9102",
+                "uid": "a005e711-de78-42b8-9529-fed175f50332"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:21Z",
+            "message": "Created pod: api-7649778f68-lx6b8",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:21Z",
+                "name": "api-7649778f68.18dcecc4bc45bb5c",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9117",
+                "uid": "12affc95-c955-47f5-8ebb-01ec5b040476"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:21Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "api-7649778f68",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9102",
+                "uid": "a005e711-de78-42b8-9529-fed175f50332"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:21Z",
+            "message": "Created pod: api-7649778f68-ffxqt",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:21Z",
+                "name": "api-7649778f68.18dcecc4c21dcd8d",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9122",
+                "uid": "df84c184-9e18-46fd-b737-b1e25ff9a1b4"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:21Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "api",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "8998",
+                "uid": "04e0dbfc-7013-40a2-9b65-45ffda8b4a7a"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:21Z",
+            "message": "New size: 6; reason: cpu resource utilization (percentage of request) above target",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:21Z",
+                "name": "api.18dcecc4b7fcdd98",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9104",
+                "uid": "5ddf96de-041e-4a91-9793-836973d82c8d"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-10-09T17:31:21Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "api",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9101",
+                "uid": "ed072d7a-256d-4241-b2ce-ae9831e62594"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-10-09T17:31:21Z",
+            "message": "Scaled up replica set api-7649778f68 from 2 to 6",
+            "metadata": {
+                "creationTimestamp": "2026-10-09T17:31:21Z",
+                "name": "api.18dcecc4b88f728a",
+                "namespace": "usermgmt-02230135",
+                "resourceVersion": "9105",
+                "uid": "c6bffdd9-c76b-46fb-be71-a57fa24b7d1d"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "deployment-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": ""
+    }
+}

@@ -1,0 +1,8 @@
+.tools/
+.venv/
+__pycache__/
+.env
+*.log
+k8s/01-db-secret.yaml
+autoscaler/
+

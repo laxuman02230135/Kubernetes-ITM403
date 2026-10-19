@@ -1,0 +1,6 @@
+test_database_outage_affects_readiness_but_not_liveness (__main__.HealthBehaviour.test_database_outage_affects_readiness_but_not_liveness) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.043s
+
+OK

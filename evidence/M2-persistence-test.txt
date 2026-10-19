@@ -1,0 +1,46 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261010001304
+Username: NEYMAR-SANTOS-D\laxuman
+RunAs User: NEYMAR-SANTOS-D\laxuman
+Configuration Name: 
+Machine: NEYMAR-SANTOS-D (Microsoft Windows NT 10.0.26300.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\laxuman\AppData\Local\Programs\Microsoft VS Code\2a59476c9b\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 16008
+PSVersion: 5.1.26100.9549
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9549
+BuildVersion: 10.0.26100.9549
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PostgreSQL persistence test for student 02230135
+Test row ID: 21bc17a5-88a0-4c45-8f69-8bf8ff287be7
+Before deletion: inspect the Pod and storage claim
+Original Pod UID: 6cb22331-7b67-4bae-b465-7c59ad1a8930
+PVC UID: a6742fdb-ac73-4289-8f36-6e413b1a6b44
+Volume: pvc-a6742fdb-ac73-4289-8f36-6e413b1a6b44
+SQL: CREATE TABLE IF NOT EXISTS public.assignment_persistence_check (
+    test_id text PRIMARY KEY,
+    note text NOT NULL,
+    created_at timestamptz NOT NULL DEFAULT now()
+);
+INSERT INTO public.assignment_persistence_check (test_id, note)
+VALUES ('21bc17a5-88a0-4c45-8f69-8bf8ff287be7', 'Student 02230135: saved before Pod deletion');
+SELECT * FROM public.assignment_persistence_check WHERE test_id = '21bc17a5-88a0-4c45-8f69-8bf8ff287be7';
+
+kubectl --context=minikube delete pod postgres-0 -n usermgmt-02230135
+
+Replacement Pod UID: 83ef26e0-8c02-42f7-8caf-6c43859b4d8c
+Same PVC UID: a6742fdb-ac73-4289-8f36-6e413b1a6b44
+Same volume: pvc-a6742fdb-ac73-4289-8f36-6e413b1a6b44
+SQL: SELECT * FROM public.assignment_persistence_check WHERE test_id = '21bc17a5-88a0-4c45-8f69-8bf8ff287be7';
+
+
+PASS: new Pod UID, unchanged PVC and volume, and the original row survived.
+**********************
+Windows PowerShell transcript end
+End time: 20261010001312
+**********************

@@ -1,0 +1,17 @@
+NAME                  READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/api   2/2     2            2           34s
+
+NAME                             DESIRED   CURRENT   READY   AGE
+replicaset.apps/api-7649778f68   2         2         2       34s
+
+NAME                       READY   STATUS    RESTARTS   AGE
+pod/api-7649778f68-qkwrq   1/1     Running   0          34s
+pod/api-7649778f68-zl899   1/1     Running   0          34s
+pod/postgres-0             1/1     Running   0          21m
+
+NAME               TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
+service/api        ClusterIP   10.110.64.38   <none>        80/TCP     8m50s
+service/postgres   ClusterIP   None           <none>        5432/TCP   28m
+
+NAME                                             STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
+persistentvolumeclaim/postgres-data-postgres-0   Bound    pvc-a6742fdb-ac73-4289-8f36-6e413b1a6b44   1Gi        RWO            standard       <unset>                 27m

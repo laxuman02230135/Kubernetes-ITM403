@@ -1,0 +1,46 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261010001241
+Username: NEYMAR-SANTOS-D\laxuman
+RunAs User: NEYMAR-SANTOS-D\laxuman
+Configuration Name: 
+Machine: NEYMAR-SANTOS-D (Microsoft Windows NT 10.0.26300.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\laxuman\AppData\Local\Programs\Microsoft VS Code\2a59476c9b\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 16008
+PSVersion: 5.1.26100.9549
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9549
+BuildVersion: 10.0.26100.9549
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+
+Matching hosts-file entries:
+127.0.0.1 usermgmt-02230135.local
+GET http://usermgmt-02230135.local/users
+HTTP/1.1 200 OK
+Content-Length: 58
+Content-Type: application/json
+Date: Fri, 09 Oct 2026 18:12:41 GMT
+Server: gunicorn
+
+[{"email":"laxuman@example.com","id":4,"name":"Laxuman"}]
+
+STATUS:200
+GET /users with Host: wrong-02230135.local
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Fri, 09 Oct 2026 18:12:41 GMT
+Content-Length: 19
+
+404 page not found
+
+STATUS:404
+PASS: matching host reaches the API; unmatched host returns 404.
+**********************
+Windows PowerShell transcript end
+End time: 20261010001241
+**********************

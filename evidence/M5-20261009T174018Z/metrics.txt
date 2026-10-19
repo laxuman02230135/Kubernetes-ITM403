@@ -1,0 +1,4 @@
+NAME                   CPU(cores)   MEMORY(bytes)   
+api-7649778f68-b8trb   3m           79Mi            
+api-7649778f68-tnzlb   3m           79Mi            
+postgres-0             12m          25Mi            

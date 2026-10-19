@@ -1,0 +1,48 @@
+kubectl --context=minikube get nodes
+NAME       STATUS   ROLES           AGE   VERSION
+minikube   Ready    control-plane   36h   v1.36.1
+
+kubectl --context=minikube get pods -A
+NAMESPACE           NAME                                        READY   STATUS    RESTARTS       AGE
+kube-system         coredns-589f44dc88-8tgfz                    1/1     Running   1 (126m ago)   36h
+kube-system         coredns-589f44dc88-z6kxz                    1/1     Running   1 (126m ago)   36h
+kube-system         etcd-minikube                               1/1     Running   1 (126m ago)   36h
+kube-system         kindnet-7rb4n                               1/1     Running   1 (126m ago)   36h
+kube-system         kube-apiserver-minikube                     1/1     Running   1 (126m ago)   36h
+kube-system         kube-controller-manager-minikube            1/1     Running   1 (126m ago)   36h
+kube-system         kube-proxy-2qc77                            1/1     Running   1 (126m ago)   36h
+kube-system         kube-scheduler-minikube                     1/1     Running   1 (126m ago)   36h
+kube-system         metrics-server-6ddb444b87-8zxnv             1/1     Running   1 (126m ago)   36h
+kube-system         storage-provisioner                         1/1     Running   2 (126m ago)   36h
+kube-system         traefik-59f8b8c94c-rrzp5                    1/1     Running   1 (126m ago)   36h
+kube-system         vpa-admission-controller-84b689964b-762nq   1/1     Running   1 (126m ago)   36h
+kube-system         vpa-recommender-64649ddd65-wtz8q            1/1     Running   1 (126m ago)   36h
+kube-system         vpa-updater-5649d9c85b-6zbj7                1/1     Running   1 (126m ago)   36h
+usermgmt-02230135   api-7649778f68-b8trb                        1/1     Running   0              27m
+usermgmt-02230135   api-7649778f68-tnzlb                        1/1     Running   0              27m
+usermgmt-02230135   postgres-0                                  1/1     Running   0              114m
+
+kubectl --context=minikube get storageclass
+NAME                 PROVISIONER                RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
+standard (default)   k8s.io/minikube-hostpath   Delete          Immediate           false                  36h
+
+kubectl --context=minikube top nodes
+NAME       CPU(cores)   CPU(%)   MEMORY(bytes)   MEMORY(%)   
+minikube   288m         2%       1514Mi          19%         
+
+kubectl --context=minikube get statefulset,pods,pvc -n usermgmt-02230135
+NAME                        READY   AGE
+statefulset.apps/postgres   1/1     120m
+
+NAME                       READY   STATUS    RESTARTS   AGE
+pod/api-7649778f68-b8trb   1/1     Running   0          27m
+pod/api-7649778f68-tnzlb   1/1     Running   0          27m
+pod/postgres-0             1/1     Running   0          114m
+
+NAME                                             STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
+persistentvolumeclaim/postgres-data-postgres-0   Bound    pvc-a6742fdb-ac73-4289-8f36-6e413b1a6b44   1Gi        RWO            standard       <unset>                 120m
+
+kubectl --context=minikube get pv
+NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                                        STORAGECLASS   VOLUMEATTRIBUTESCLASS   REASON   AGE
+pvc-a6742fdb-ac73-4289-8f36-6e413b1a6b44   1Gi        RWO            Delete           Bound    usermgmt-02230135/postgres-data-postgres-0   standard       <unset>                          120m
+

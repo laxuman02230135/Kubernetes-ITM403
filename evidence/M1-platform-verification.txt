@@ -1,0 +1,40 @@
+Platform verification for student 02230135
+Verified on 2026-10-08
+
+NODE
+NAME       STATUS   ROLES           AGE     VERSION
+minikube   Ready    control-plane   3m28s   v1.36.1
+
+PLATFORM PODS
+NAMESPACE     NAME                                        READY   STATUS    RESTARTS   AGE
+kube-system   coredns-589f44dc88-8tgfz                    1/1     Running   0          3m19s
+kube-system   coredns-589f44dc88-z6kxz                    1/1     Running   0          3m19s
+kube-system   etcd-minikube                               1/1     Running   0          3m24s
+kube-system   kindnet-7rb4n                               1/1     Running   0          3m19s
+kube-system   kube-apiserver-minikube                     1/1     Running   0          3m24s
+kube-system   kube-controller-manager-minikube            1/1     Running   0          3m27s
+kube-system   kube-proxy-2qc77                            1/1     Running   0          3m19s
+kube-system   kube-scheduler-minikube                     1/1     Running   0          3m24s
+kube-system   metrics-server-6ddb444b87-8zxnv             1/1     Running   0          3m5s
+kube-system   storage-provisioner                         1/1     Running   0          3m22s
+kube-system   traefik-59f8b8c94c-rrzp5                    1/1     Running   0          2m40s
+kube-system   vpa-admission-controller-84b689964b-762nq   1/1     Running   0          2m39s
+kube-system   vpa-recommender-64649ddd65-wtz8q            1/1     Running   0          2m41s
+kube-system   vpa-updater-5649d9c85b-6zbj7                1/1     Running   0          2m42s
+
+STORAGECLASS
+NAME                 PROVISIONER                RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
+standard (default)   k8s.io/minikube-hostpath   Delete          Immediate           false                  3m22s
+
+NODE METRICS
+NAME       CPU(cores)   CPU(%)   MEMORY(bytes)   MEMORY(%)   
+minikube   622m         5%       1337Mi          17%         
+
+NAMESPACE
+NAME                STATUS   AGE
+usermgmt-02230135   Active   3m8s
+
+INGRESS CLASS
+NAME                CONTROLLER                      PARAMETERS   AGE
+traefik (default)   traefik.io/ingress-controller   <none>       2m40s
+

@@ -1,0 +1,36 @@
+{
+  "url": "http://usermgmt-02230135.local/users",
+  "concurrency": 10,
+  "load_seconds": 180,
+  "cooldown_seconds": 420,
+  "responses": {
+    "200": 6002
+  },
+  "max_replicas": 6,
+  "new_restarts": 0,
+  "final_replicas": 2,
+  "final_ready": 2,
+  "vpa_mode": "Off",
+  "vpa_recommendations": [
+    {
+      "containerName": "postgres",
+      "lowerBound": {
+        "cpu": "25m",
+        "memory": "250Mi"
+      },
+      "target": {
+        "cpu": "25m",
+        "memory": "250Mi"
+      },
+      "uncappedTarget": {
+        "cpu": "25m",
+        "memory": "250Mi"
+      },
+      "upperBound": {
+        "cpu": "6336m",
+        "memory": "1121342932"
+      }
+    }
+  ],
+  "passed": true
+}

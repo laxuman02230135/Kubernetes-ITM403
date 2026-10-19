@@ -1,0 +1,58 @@
+**********************
+PowerShell transcript start
+Start time: 20261009222524
+Username: NEYMAR-SANTOS-D\laxuman
+RunAs User: NEYMAR-SANTOS-D\laxuman
+Configuration Name: 
+Machine: NEYMAR-SANTOS-D (Microsoft Windows NT 10.0.26300.0)
+Host Application: C:\Users\laxuman\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell\pwsh.dll -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+./scripts/test-api.ps1
+Process ID: 24000
+PSVersion: 7.6.5
+PSEdition: Core
+GitCommitId: 7.6.5
+OS: Microsoft Windows 10.0.26300
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+API integration tests through kubectl port-forward at http://127.0.0.1:8081
+GET /healthz => 200
+{"status":"alive"}
+GET /ready => 200
+{"status":"ready"}
+POST /users => 201
+{"email":"pema-e837e4e680@example.com","id":1,"name":"Pema"}
+GET /users/1 => 200
+{"email":"pema-e837e4e680@example.com","id":1,"name":"Pema"}
+GET /users => 200
+[{"email":"pema-e837e4e680@example.com","id":1,"name":"Pema"}]
+POST /users => 409
+{"error":"Email already exists."}
+POST /users => 400
+{"error":"Name must contain 1 to 100 characters."}
+PUT /users/1 => 200
+{"email":"updated-e837e4e680@example.com","id":1,"name":"Pema Updated"}
+GET /users/1 => 200
+{"email":"updated-e837e4e680@example.com","id":1,"name":"Pema Updated"}
+POST /users => 201
+{"email":"sonam-e837e4e680@example.com","id":3,"name":"Sonam"}
+PUT /users/3 => 409
+{"error":"Email already exists."}
+DELETE /users/1 => 204
+
+GET /users/1 => 404
+{"error":"User not found."}
+PUT /users/1 => 404
+{"error":"User not found."}
+DELETE /users/1 => 404
+{"error":"User not found."}
+DELETE /users/3 => 204
+
+PASS: all CRUD operations, persisted updates, duplicate protection, validation, missing users, and health endpoints.
+**********************
+PowerShell transcript end
+End time: 20261009222525
+**********************

@@ -1,0 +1,40 @@
+Name:         postgres
+Namespace:    usermgmt-02230135
+Labels:       <none>
+Annotations:  <none>
+API Version:  autoscaling.k8s.io/v1
+Kind:         VerticalPodAutoscaler
+Metadata:
+  Creation Timestamp:  2026-10-09T17:30:06Z
+  Generation:          1
+  Resource Version:    9870
+  UID:                 53c58cac-7337-44b2-b962-c9db565130f6
+Spec:
+  Target Ref:
+    API Version:  apps/v1
+    Kind:         StatefulSet
+    Name:         postgres
+  Update Policy:
+    Update Mode:  Off
+Status:
+  Conditions:
+    Last Transition Time:  2026-10-09T17:30:34Z
+    Status:                True
+    Type:                  RecommendationProvided
+  Observed Generation:     1
+  Recommendation:
+    Container Recommendations:
+      Container Name:  postgres
+      Lower Bound:
+        Cpu:     25m
+        Memory:  250Mi
+      Target:
+        Cpu:     25m
+        Memory:  250Mi
+      Uncapped Target:
+        Cpu:     25m
+        Memory:  250Mi
+      Upper Bound:
+        Cpu:     3189m
+        Memory:  1228976388
+Events:          <none>

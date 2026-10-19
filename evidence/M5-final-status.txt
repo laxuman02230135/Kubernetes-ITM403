@@ -1,0 +1,10 @@
+NAME                                      REFERENCE        TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/api   Deployment/api   cpu: 3%/50%   2         6         2          20m
+
+NAME                                                MODE   CPU   MEM     PROVIDED   AGE
+verticalpodautoscaler.autoscaling.k8s.io/postgres   Off    25m   250Mi   True       20m
+
+NAME                       READY   STATUS    RESTARTS   AGE
+pod/api-7649778f68-b8trb   1/1     Running   0          19m
+pod/api-7649778f68-tnzlb   1/1     Running   0          19m
+pod/postgres-0             1/1     Running   0          106m
